@@ -1,12 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* shared-styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Quicksand", serif;
 }
-/* shared-styles */
+
+.primary-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.secondary-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.primary-color {
+  color: rgb(254, 163, 1);
+}
+.secondary-color {
+  color: rgb(1, 172, 253);
+}
+
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* nav-styles */
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Quicksand", serif;
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+.btn-style {
+  font-size: 1.6rem;
+  color: white;
+  padding: 16px 61px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+}
+/* header-styles */
+
+header {
+  max-width: 1541px;
+  margin: 0 auto;
+}
+/* nav-style */
+.navbar {
+  justify-content: space-between;
+  margin: 25px 0;
+}
+.logo {
+  gap: 0.8rem;
+}
+.logo-img {
+  height: 5.15rem;
+  width: 5.15rem;
+}
+.logo-name {
+  font-size: 2.6rem;
+}
+/* links-style */
+.links {
+  gap: 42px;
+}
+.links li:nth-child(1) a {
+  color: rgb(254, 163, 1);
+}
+
+.links li:nth-child(2) a {
+  color: rgb(1, 172, 253);
+}
+.links li:nth-child(3) a {
+  color: rgb(5, 212, 223);
+}
+.links li:nth-child(4) a {
+  color: rgb(93, 88, 239);
+}
+.contact-btn {
+  background-color: rgb(254, 163, 1);
+}
+.hamburger-menu {
+  display: none;
+}
+/* banner-style */
+.banner {
+  justify-content: space-between;
+}
+.banner-title {
+  font-size: 4.6rem;
+  font-weight: 700;
+}
+.banner-title p:nth-child(1) {
+  color: rgb(254, 163, 1);
+}
+
+#vision-color {
+  color: #01acfd;
+}
+#age-color {
+  color: black;
+}
+.banner-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 32px;
+}
+.enroll-btn {
+  background-color: black;
+  margin: 32px 0;
+}
+.banner-img {
+  height: 765px;
+  width: 622px;
+}
+.banner-description-small-device {
+  display: none;
+}
+
+/* small-device */
+@media screen and (max-width: 576px) {
+  .navbar {
+    margin: 16px 21px;
+  }
+  .logo-img {
+    height: 46px;
+    width: 46px;
+  }
+  .logo-name {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline;
+    height: 23px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .hamburger-lines {
+    height: 4px;
+    background-color: black;
+    width: 30px;
+    border-radius: 100px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    width: 380px;
+    height: 470px;
+  }
+  .banner-img > img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .banner-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .banner-description {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner-description-small-device {
+    display: inline-block;
+    text-align: center;
+  }
+}

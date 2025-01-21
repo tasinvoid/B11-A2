@@ -8,32 +8,50 @@
   </head>
   <body>
     <header>
-      <nav class="flex">
+      <nav class="navbar flex">
         <div class="logo flex">
           <img class="logo-img" src="assets/logo.png" alt="logo" />
-          <h1>SCHOOL</h1>
+          <h1 class="logo-name primary-font">SCHOOL</h1>
         </div>
         <div class="links flex">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Facilities</a></li>
-          <li><a href="#">Facilities</a></li>
+          <li><a class="color-links" href="#">Home</a></li>
+          <li><a class="color-links" href="#">About</a></li>
+          <li><a class="color-links" href="#">Facilities</a></li>
+          <li><a class="color-links" href="#">Admission</a></li>
         </div>
-        <button class="contact-btn">Contact</button>
+        <button class="contact-btn btn-style">Contact</button>
+        <div class="hamburger-menu">
+          <div class="hamburger-lines"></div>
+          <div class="hamburger-lines"></div>
+          <div class="hamburger-lines"></div>
+        </div>
       </nav>
-      <div class="banner">
+      <div class="banner flex">
         <div class="banner-content">
-          <h1>Empowering students from small age towards vision</h1>
-          <p>
+          <h1 class="banner-title">
+            <p>Empowering</p>
+            students from small <br />
+
+            <p id="vision-color">
+              <span id="age-color">age </span>towards vision
+            </p>
+          </h1>
+          <p class="banner-description primary-font">
             With the courage, Confidence, Creativity and Compassion to make
+            <br />
             their Unique Contribution in a Diverse and Dynamic World.
           </p>
-          <button class="enroll-btn">Enroll Now</button>
+          <p class="banner-description-small-device primary-font">
+            With the courage, Confidence, Creativity and <br />Compassion to
+            make their Unique Contribution in a<br />
+            Diverse and Dynamic World.
+          </p>
+          <button class="enroll-btn btn-style">Enroll Now</button>
         </div>
         <img class="banner-img" src="assets/hero-kids.png" alt="" />
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="curriculum">
         <h1>Standard Curriculum</h1>
         <div class="curriculum-cards-container">
@@ -130,6 +148,6 @@
         <img src="assets/twitter.png" alt="" />
         <img src="assets/google+.png" alt="" />
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
