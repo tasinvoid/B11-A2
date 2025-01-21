@@ -50,6 +50,23 @@ li {
   border: none;
   font-weight: 600;
 }
+body {
+  background: url(),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 35%);
+}
+.date-btn {
+  border-radius: 47.93px;
+  background: rgb(149, 178, 38);
+  color: rgb(255, 255, 255);
+  font-family: "Raleway";
+  font-size: 15.34px;
+  font-weight: 500;
+  padding: 13px 25px;
+  width: fit-content;
+  border: none;
+  margin-top: -20px;
+  margin-left: 50px;
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 header-styles  ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -148,7 +165,7 @@ main {
 }
 .curriculum-title {
   color: rgb(0, 0, 0);
-  font-family: Quicksand;
+  font-family: "Quicksand";
   font-size: 3.82rem;
   font-weight: 700;
 }
@@ -230,6 +247,9 @@ main {
   color: rgb(135, 0, 255);
 }
 /* slide-btn-style */
+.slide-btns {
+  margin: 60px 0;
+}
 .slide-btns > img {
   height: 80px;
   width: 80px;
@@ -245,6 +265,88 @@ stories-styles  ////////////////////////////////////////////////////////////////
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  background-image: url(assets/bg.png);
+  background-position: center;
+  gap: 20px;
+}
+.stories-title {
+  font-size: 3.8rem;
+  margin: 80px 0;
+}
+.stories-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1540px;
+  gap: 20px;
+}
+.stories-small-cards .stories-card:nth-child(2) button {
+  border-radius: 47.93px;
+
+  background: #5d58f0;
+}
+.stories-small-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 388px);
+  gap: 20px;
+}
+.stories-card {
+  border-radius: 16px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.stories-card > h1 {
+  padding: 37px 50px 37px 50px;
+}
+.stories-card > img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.stories-card > button {
+  background: rgb(149, 178, 38);
+}
+.stories-big-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 17px;
+}
+.stories-big-card > h1 {
+  font-family: "Quicksand";
+  font-size: 31px;
+  font-weight: 700;
+  padding: 57px;
+}
+.stories-big-card > p {
+  font-family: "Raleway";
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+  padding: 25px 45px 75px 45px;
+}
+.stories-big-card > img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.big-date-btn {
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+  height: 64px;
+  width: 233px;
+  font-size: 20px;
+  margin-left: -250px;
+  margin-top: -35px;
+}
+.view-btn {
+  background-color: black;
+  margin: 80px 0;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
