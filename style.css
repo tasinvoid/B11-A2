@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* shared-styles */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* nav-styles */
