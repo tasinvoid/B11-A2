@@ -445,4 +445,12 @@ small-device-styles  ///////////////////////////////////////////////////////////
   .slide-btns {
     display: none;
   }
+  /* story-small-device */
+  .stories-big-card {
+    display: none;
+  }
+  .stories-small-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
