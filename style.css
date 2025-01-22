@@ -605,6 +605,8 @@ small-device-styles  ///////////////////////////////////////////////////////////
   footer {
     flex-direction: column;
     gap: 40px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .footer-description {
     margin: 50px 20px;
